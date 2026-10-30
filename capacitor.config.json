@@ -1,0 +1,6 @@
+{
+  "appId": "com.lecturetracker.app",
+  "appName": "MBBS Tracker",
+  "webDir": "public",
+  "backgroundColor": "#f7f7f5"
+}

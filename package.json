@@ -1,0 +1,21 @@
+{
+  "name": "mbbs-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MBBS Tracker – one codebase (public/) for the website/PWA and the Android app",
+  "scripts": {
+    "deploy:web": "firebase deploy --only hosting",
+    "android:setup": "cap add android && capacitor-assets generate --android --iconBackgroundColor #6d28d9 --iconBackgroundColorDark #6d28d9 && cap sync android",
+    "android:sync": "cap sync android",
+    "android:apk": "cap sync android && cd android && ./gradlew assembleDebug",
+    "android:open": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0"
+  }
+}
